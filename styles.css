@@ -1,0 +1,235 @@
+html{
+    height: 100%;
+}
+body {
+    background-image: url("images/bg-bottom.svg"), url("images/bg-top.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left, top right;
+    background-color: hsl(240, 78%, 98%);
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: 700;
+    color: #494c5f;
+  }
+
+  #plantype {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+
+
+
+
+
+  h2 {
+    text-align: center;
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 34px;
+    bottom: 6px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(237, 63%, 64%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked+.slider {
+    background-color: hsl(237, 63%, 64%);
+  }
+
+  input:focus+.slider {
+    box-shadow: 0 0 1px hsl(237, 63%, 64%);
+  }
+
+  input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+ 
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+  .plan {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+
+  #annual {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #month {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #plantype {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+  }
+
+  #basic,
+  #professional,
+  #master {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+
+
+
+  .button {
+    height: 40px;
+    width: 250px;
+    border: 1px solid #b3b5c6;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  #basic,
+  #master {
+    background-color: white;
+    width: 280px;
+
+  }
+  #basic:hover,#master:hover{
+      width: 300px;
+      height: 450px;
+  }
+
+  #professional {
+    background-color: hsl(237, 63%, 64%);
+    color: #f6f6fe;
+    height: 400px;
+    width: 280px;
+
+
+  }
+  #professional:hover{
+      height: 450px;
+      width: 300px;
+  }
+
+  ul {
+    list-style: none;
+    text-align: center;
+    width: 90%;
+  }
+
+  
+  .child
+  ,.plan-details{
+    padding: 15px 0;
+    
+    
+  }
+
+  
+  .plan-details{
+    border-bottom: 1px solid #b3b5c6;
+    border-top: 1px solid #b3b5c6;
+    margin-bottom: 10px;
+    
+  }
+    
+  li{
+      box-sizing: border-box;
+      border-bottom: 1px solid #b3b5c6;
+      width: 100%;
+      
+      
+  }
+
+  li:last-child{
+      border: none;
+  }
+  
+
+  
+  .price {
+    font-size: 50px;
+  }
+
+  .dollar {
+    position: relative;
+    font-size: 30px;
+    bottom: 8px;
+  }
+
+  .blue{
+      background-color: hsl(237, 63%, 64%);
+      color: white;
+  }
+  .white{
+    color:hsl(237, 63%, 64%);
+  }
+
+  .blue:hover{
+      background-color: white;
+      color: hsl(237, 63%, 64%);
+  }
+  .white:hover{
+    background-color: hsl(237, 63%, 64%);
+    color: white;
+  }
+  
