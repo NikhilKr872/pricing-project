@@ -141,8 +141,8 @@
 
     #basic:hover,
     #master:hover {
-        width: 300px;
-        height: 450px;
+        background-color: hsl(237, 63%, 64%);
+        color:white;
     }
 
     #professional {
@@ -152,10 +152,12 @@
         width: 280px;
     }
 
-    #professional:hover {
-        height: 450px;
-        width: 300px;
+    #professional:hover{
+        background-color: white;
+        color:black;
     }
+
+   
 
     ul {
         list-style: none;
