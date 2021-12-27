@@ -1,0 +1,12 @@
+{
+    "annual":{
+        "basic": 199.99,
+        "prof": 249.99,
+        "master":399.99
+    },
+    "monthly":{
+        "basic": 19.99,
+        "prof": 24.99,
+        "master":39.99
+    }
+}
