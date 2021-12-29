@@ -62,3 +62,31 @@ function addDollar(basic, prof, master, dollar) {
   
   master.appendChild(dollar.cloneNode(true))
 }
+
+function changeColor(){
+  let prof=document.getElementById('professional')
+  prof.style.backgroundColor="white";
+  prof.style.color="black"
+  let white=document.querySelector(".white")
+  white.style.color="black"
+}
+
+function revertColor(){
+  let prof=document.getElementById('professional')
+  prof.style.backgroundColor="hsl(237, 63%, 64%)";
+  prof.style.color="white"
+  let white=document.querySelector(".white")
+  white.style.color="hsl(237, 63%, 64%)"
+}
+
+let basic=document.getElementById('basic')
+
+let master=document.getElementById('master')
+
+basic.addEventListener('mouseover',changeColor)
+
+master.addEventListener('mouseover',changeColor)
+
+basic.addEventListener('mouseout',revertColor)
+
+master.addEventListener('mouseout',revertColor)
