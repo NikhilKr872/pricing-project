@@ -71,6 +71,15 @@ function changeColor(){
   white.style.color="black"
 }
 
+let white=document.querySelector(".white")
+white.addEventListener('mouseover',()=>{
+  white.style.color="white"
+})
+
+white.addEventListener('mouseout',()=>{
+  white.style.color="hsl(237, 63%, 64%)"
+})
+
 function revertColor(){
   let prof=document.getElementById('professional')
   prof.style.backgroundColor="hsl(237, 63%, 64%)";
