@@ -68,16 +68,20 @@ function changeColor(){
   prof.style.backgroundColor="white";
   prof.style.color="black"
   let white=document.querySelector(".white")
-  white.style.color="black"
+  white.style.color="white"
+  white.style.backgroundColor="hsl(237, 63%, 64%)"
 }
 
 let white=document.querySelector(".white")
 white.addEventListener('mouseover',()=>{
-  white.style.color="white"
+  white.style.color="hsl(237, 63%, 64%)"
+  white.style.backgroundColor="white"
+  
 })
 
 white.addEventListener('mouseout',()=>{
-  white.style.color="hsl(237, 63%, 64%)"
+  white.style.color="white"
+  white.style.backgroundColor="hsl(237, 63%, 64%)"
 })
 
 function revertColor(){
@@ -86,6 +90,7 @@ function revertColor(){
   prof.style.color="white"
   let white=document.querySelector(".white")
   white.style.color="hsl(237, 63%, 64%)"
+  white.style.backgroundColor="white"
 }
 
 let basic=document.getElementById('basic')
